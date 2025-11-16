@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiết kế website game bằng css Animation</title>
+
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <!-- ================== PHẦN HEADER TRÊN CÙNG ================== -->
+<header class="top-header">
+  <!-- Nút menu ẩn -->
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  
+  <!-- Logo nhỏ -->
+  <div class="logo-area">
+    <img src="meomeo.jpg" alt="Logo HyO" class="logo">
+    <h1 class="site-name">Nắng Ban Mai</h1>
+  </div>
+  <!-- Nút đăng nhập -->
+  <button class="login-btn">Đăng nhập</button>
+</header>
+
+<!-- Menu ẩn (hiện ra khi bấm ☰) -->
+<div id="hidden-menu" class="hidden-menu">
+  <a href="#">Trang chủ</a>
+  <a href="#">Giới thiệu</a>
+  <a href="#">Danh mục game</a>
+  <a href="#">Liên hệ</a>
+  <a href="#"></a>
+</div>
+<section class="banner">
+      <!-- 🎥 Video nền -->
+  <iframe class="banner-video" 
+  allowfullscreen src="https://www.youtube.com/embed/zF5Ddo9JdpY?feature=oembed&amp;autoplay=1&amp;wmode=opaque&amp;loop=1&amp;controls=0&amp;mute=1&amp;rel=0&amp;modestbranding=0" loading="lazy">
+
+  </iframe>
+  <!-- Dòng chữ chạy ngang -->
+  <marquee class="welcome-text" behavior="scroll" direction="left">
+    <font color="white">💥Welcome to my world🌏form:</font>
+    <font color="#990000"><u>Anh Hiếu</u></font>🎞️
+  </marquee>
+  <!-- 🖼️ Slide ảnh chạy ngang -->
+  <div class="banner-slider">
+    <div class="slider-track">
+      <img src="Minecraft.jpg" alt="Banner 1">
+      <img src="Liên minh huyền thoại.jpg" alt="Banner 2">
+      <img src="Genshin Impact.jpg" alt="Banner 3">
+      <img src="Dauntless.jpg" alt="Banner 4">
+      <img src="Warframe.jpg" alt="Banner 5">
+      <!-- Lặp lại lần 2 để tạo hiệu ứng cuộn liên tục -->
+      <img src="Minecraft.jpg" alt="Banner 1">
+      <img src="Liên minh huyền thoại.jpg" alt="Banner 2">
+      <img src="Genshin Impact.jpg" alt="Banner 3">
+      <img src="Dauntless.jpg" alt="Banner 4">
+      <img src="Warframe.jpg" alt="Banner 5">
+    </div>
+  </div>
+</section>
+</section>
+<nav class="main-nav">
+  <ul>
+    <li><a href="#">Trang chủ 🏠︎</a></li>
+    <li><a href="#">HyO Shop🛒</a></li>
+    <li><a href="#">Danh mục game🗺️</a></li>
+    <li><a href="#">Tin tức🔥</a></li>
+    <li><a href="#">TRỰC TIẾP🔴</a></li>
+  </ul>
+</nav>
+<!-- ================== PHẦN MAIN ================== -->
+<main class="main-content">
+     <!-- 🔍 Thanh tìm kiếm thay cho logo -->
+  <div class="search-box">
+    <input type="text" placeholder="Tìm kiếm game..." id="searchInput">
+    <button class="search-btn">Tìm</button>
+  </div>
+  <h2 class="main-title">🎮 Tựa Game thịnh hành và nổi bật 🎮</h2>
+  <div class="game-container">
+
+    <div class="game-card">
+      <img src="Liên minh huyền thoại.jpg" alt="Game 1">
+      <h3>Liên Minh Huyền Thoại</h3>
+      <p>Thể loại: MOBA</p>
+      <a href="https://lienminh.vnggames.com/vi-vn/" class="download-btn">Link tải</a>
+    </div>
+
+    <div class="game-card">
+      <img src="valorant.jpg" alt="Game 2">
+      <h3>Valorant</h3>
+      <p>Thể loại: FPS</p>
+      <a href="https://valorant.vnggames.com/vi-vn/top-1-fps-phong-may/?utm_source=Google&utm_medium=GenZ&utm_campaign=VAL%7C465%7CGG%7CPM%7CPC%7CUA%7CNEW%7CPER%7C0162%7CVN_GenZ_LD4&gad_source=1&gad_campaignid=22831052325&gbraid=0AAAAA_K1ykiEzLtp8Q3v1PmJdFJ3l2ifv&gclid=CjwKCAiA_dDIBhB6EiwAvzc1cKWoSi2TrMoStH_rXJzvZkdHYILgJzKm2C_Kh5cdDNOVvtNI__YvTBoCdBYQAvD_BwE" class="download-btn">Link tải</a>
+    </div>
+
+    <div class="game-card">
+      <img src="phở anh hai.jpg" alt="Game 3">
+      <h3>Phở Anh Hai</h3>
+      <p>Thể loại: RPG</p>
+      <a href="https://marisa0704.itch.io/brother-hais-pho-restaurant" class="download-btn">Link tải</a>
+    </div>
+
+    <div class="game-card">
+      <img src="CSGO 2.jpg" alt="Game 4">
+      <h3>CSGO 2</h3>
+      <p>Thể loại: FPS</p>
+      <a href="https://store.steampowered.com/app/730/CounterStrike_2/" class="download-btn">Link tải</a>
+    </div>
+  </div>
+</main>
+<!-- ================== PHẦN FOOTER ================== -->
+<footer class="footer">
+  <div class="footer-content">
+    <h3>Liên hệ</h3>
+    <p>Email: <a href="mailto:hyosan2k5@gmail.com">hyosan2k5@gmail.com</a></p>
+    <p>Hotline: 0989 130305</p>
+    <p>Địa chỉ: Bắc An Phụ, Trần Liễu, Tp Hải Phòng, Việt Nam</p>
+
+  <div class="footer-social">
+    <p>Kết nối với chúng tôi:</p>
+    <a href="https://www.facebook.com/van.hieu.155154"><img src="FB.jpg" alt="Facebook"></a>
+    <a href="zalo.html"><img src="zalo.jpg" alt="Zalo"></a>
+    <a href="https://www.instagram.com/o_hyo_13.03/"><img src="instagram.jpg" alt="Instagram"></a>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Website HyO. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('hidden-menu');
+    menu.classList.toggle('show');}
+</script>
+</html>
